@@ -5,7 +5,7 @@ export function Noticias() {
     <>
       <div className="flex flex-col items-center">
 
-        <div className="bg-gray-500 p-8 m-8 items-center
+        <div className="bg-gray-500 p-8 m-8 justify-center items-center
                         flex flex-col h-screen sm:h-64 sm:flex-row">
 
           <div className="w-screen h-full sm:w-2/5 border-blue-200 border bg-green-300 relative overflow-hidden">
@@ -24,7 +24,7 @@ export function Noticias() {
 
         </div>
 
-        <div className="bg-gray-500 max-w-7xl h-64 p-8 m-8 items-center flex flex-row">
+        <div className="bg-gray-500 max-w-7xl h-64 p-8 m-8 justify-center items-center flex flex-row">
 
           <div className="w-2/5 h-full border-blue-200 border bg-green-300 relative overflow-hidden">
 
