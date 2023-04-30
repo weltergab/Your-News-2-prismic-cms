@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+    @apply text-2xl
+}
+
+body {
+    @apply bg-gray-900 text-gray-100;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  a {
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    font-style: italic;
+  }
+  
+
+.btn {
+    @apply text-base font-medium rounded-lg p-3;
+}
+.btn--primary {
+    @apply bg-sky-500 text-white;
+} 
+.btn--secondary {
+    @apply bg-slate-100 text-slate-900;
+}
+
+/*
+Caixa de Texto 1
+color: #f8fafc;
+    background-color: var(--tw-prose-pre-bg);
+    overflow-x: auto;
+    font-weight: 400;
+    font-size: .875em;
+    line-height: 1.7142857;
+    margin-top: 1.4285714285714286em;
+    margin-bottom: 2.2857142857142856em;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+    display: flex;
+*/
