@@ -88,7 +88,7 @@ module.exports = {
           'text': '#000000', 
           'text2': '#000000', 
           'div': '#A8A8A8', //#A8A8A8
-          'footer': '#DCDCDC', 
+          'footer': '#E0E1E3', 
         }
       },
     },

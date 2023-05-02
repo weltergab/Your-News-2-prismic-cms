@@ -80,15 +80,15 @@ module.exports = {
         color: {
           'btn': '#0E2A47',
           'btn2': '#485B39', 
-          'bg2': '#E0E1E3', //#C8C8C8
-          'bg': '#DCDCDC', //#DCDCDC
+          'bg': '#C8C8C8', //#C8C8C8
+          'bg2': '#DCDCDC', //#DCDCDC
           'del': '#7A1E1E',
           'title': '#000000', 
           'confirm': '#FFA400', 
           'text': '#000000', 
           'text2': '#000000', 
           'div': '#A8A8A8', //#A8A8A8
-          'footer': '#DCDCDC', 
+          'footer': '#C8C8C8', 
         }
       },
     },
