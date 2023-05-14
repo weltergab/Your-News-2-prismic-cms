@@ -79,7 +79,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async context => {
   const prismic = getPrismicClient();
-  const { slug } = context.params ?? {};
+  const { slug } = context.params;
 
   const response = await prismic.getByUID('noti', String(slug), {});
 
@@ -96,6 +96,6 @@ export const getStaticProps: GetStaticProps = async context => {
     props: {
       projeto
     },
-    revalidate: 10 * 1
+    revalidate: 30 * 1
   };
 };
