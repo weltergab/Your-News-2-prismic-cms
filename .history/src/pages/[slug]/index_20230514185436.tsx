@@ -52,6 +52,11 @@ export default function Projeto({ projeto }: ProjetoProps) {
             <p>{projeto.type}</p>
           </div>
         </div>
+        <p>{projeto.description}</p>
+        <button type="button">
+          <a href={projeto.link}>Ver projeto online</a>
+        </button>
+
       </div>
     </>
   );
