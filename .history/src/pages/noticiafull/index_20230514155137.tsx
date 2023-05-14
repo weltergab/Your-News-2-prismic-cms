@@ -1,6 +1,13 @@
 import Image from "next/image";
 
-function NoticiaFull() {
+interface ProjetoProps {
+  title: string;
+  type: string;
+  slug: string;
+  img: string;
+}
+
+function NoticiaFull({ title, type, slug, img }: ProjetoProps) {
 
   return (
     <div className='bg-color-bg bg-center bg-cover bg-no-repeat mt-1 min-h-screen items-center flex flex-col'>
@@ -15,8 +22,8 @@ function NoticiaFull() {
           />
         </div>
         <div className="h-auto py-6 mx-3 px-6 flex flex-col relative">
-          <h1 className="font-medium pb-20 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptatum vitae dolorum officia</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit enim voluptates, repellat necessitatibus et ipsam fugit, officiis pariatur incidunt aliquid corrupti delectus repellendus? Unde minima reprehenderit consequuntur odio quos.</p>
+          <h1 className="font-medium pb-20 text-xl">{title}</h1>
+          <p>{type}</p>
         </div>
       </div>
 

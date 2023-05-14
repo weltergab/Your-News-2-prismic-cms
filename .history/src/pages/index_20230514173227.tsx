@@ -35,8 +35,6 @@ export default function Home({ projetos }: HomeProps) {
       <div className='bg-color-bg bg-center bg-cover bg-no-repeat min-h-screen items-center flex flex-col'>
         <Header />
         <Noticias projetos={projetos} />
-        
-        {/* <h1>{projetos[0].description}</h1> */}
       </div>
     </>
   )
