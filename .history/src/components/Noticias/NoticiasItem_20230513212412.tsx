@@ -10,7 +10,8 @@ interface ProjetoProps {
 
 export function NoticiasItem({ title, type, slug, img }: ProjetoProps) {
   return (
-    <Link href="noticiafull" className="bg-color-bg2 my-3 items-center flex flex-row h-32 md:h-40 w-11/12 md:w-4/6 border border-color-div">
+    <Link href="noticiafull">
+      <div className="bg-color-bg2 my-3 items-center flex flex-row h-32 md:h-40 mx-3 w-px border border-color-div">
         <div className="h-full w-2/6 border-color-bg2 bg-green-300 relative overflow-hidden">
           <Image
             src="/vert.jpg"
@@ -23,6 +24,7 @@ export function NoticiasItem({ title, type, slug, img }: ProjetoProps) {
           <h2 className="font-medium">{title}</h2>
           <p className="hidden md:block">{type}</p>
         </div>
+      </div>
     </Link>
   );
 }

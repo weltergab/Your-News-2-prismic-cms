@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import ProjetoItem from './ProjetoItem';
+import Image from "next/image";
+import { NoticiasItem } from "./NoticiasItem";
 
 interface IProjeto {
   slug: string;
@@ -14,12 +14,12 @@ interface ProjetosProps {
   projetos: IProjeto[];
 }
 
-function Projetos({ projetos }: ProjetosProps) {
+export function Noticias({ projetos }: ProjetosProps) {
   return (
-    <>
+    <div className="flex flex-col items-center mb-32">
       <section>
         {projetos.slice(0, 1).map(projeto => (
-          <ProjetoItem
+          <NoticiasItem
             key={projeto.slug}
             img={projeto.thumbnail}
             title={projeto.title}
@@ -28,8 +28,6 @@ function Projetos({ projetos }: ProjetosProps) {
           />
         ))}
       </section>
-    </>
+    </div>
   );
 }
-
-export default Projetos;

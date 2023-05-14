@@ -16,7 +16,7 @@ interface ProjetosProps {
 
 export function Noticias({ projetos }: ProjetosProps) {
   return (
-    <section className="flex flex-col items-center mb-32 w-full">
+    <section className="flex flex-col items-center mb-32">
       {projetos.slice(0, 1).map(projeto => (
         <NoticiasItem
           key={projeto.slug}

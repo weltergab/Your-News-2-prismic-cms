@@ -16,8 +16,8 @@ interface ProjetosProps {
 
 export function Noticias({ projetos }: ProjetosProps) {
   return (
-    <section className="flex flex-col items-center mb-32 w-full">
-      {projetos.slice(0, 1).map(projeto => (
+    <section className="flex flex-col items-center mb-32 w-screen">
+      {/* {projetos.slice(0, 1).map(projeto => (
         <NoticiasItem
           key={projeto.slug}
           img={projeto.thumbnail}
@@ -25,7 +25,7 @@ export function Noticias({ projetos }: ProjetosProps) {
           type={projeto.type}
           slug={projeto.slug}
         />
-      ))}
+      ))} */}
     </section>
   );
 }

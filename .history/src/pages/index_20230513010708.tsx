@@ -8,6 +8,7 @@ import { ContadorSemAt } from '@/components/ContadorSemAt'
 import { GetStaticProps } from 'next';
 import Prismic from '@prismicio/client';
 import { getPrismicClient } from '../services/prismic';
+import Projetos from '@/components/Projetos'
 import { Header } from '@/components/Header'
 import { Navegacao } from '@/components/Navegacao'
 import { Noticias } from '@/components/Noticias'
@@ -34,18 +35,24 @@ export default function Home({ projetos }: HomeProps) {
     <>
       <div className='bg-color-bg bg-center bg-cover bg-no-repeat min-h-screen items-center flex flex-col'>
         <Header />
-        <Noticias projetos={projetos} />
-        <h1>{projetos[0].description}</h1>
+        <Noticias />
+        {/* <Projetos projetos={projetos} /> */}
+        <h1>oi</h1>
+        console.log({projetos[0].description})
       </div>
     </>
   )
 }
 
+
+
+
+
 export const getStaticProps: GetStaticProps = async () => {
   const prismic = getPrismicClient();
 
   const projectResponse = await prismic.query(
-    [Prismic.Predicates.at('document.type', 'noti')],
+    [Prismic.Predicates.at('document.type', 'not')],
     { orderings: '[document.first_publication_date desc]' }
   );
 
