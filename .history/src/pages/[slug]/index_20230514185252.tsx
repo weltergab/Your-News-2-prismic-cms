@@ -19,7 +19,6 @@ interface ProjetoProps {
 }
 
 export default function Projeto({ projeto }: ProjetoProps) {
-  const router = useRouter();
   if (router.isFallback) {
     return 0;
   }
