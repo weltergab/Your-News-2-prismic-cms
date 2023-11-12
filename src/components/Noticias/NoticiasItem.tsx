@@ -13,7 +13,7 @@ export function NoticiasItem({ title, type, slug, img }: ProjetoProps) {
     <Link href={`/${slug}`} className="bg-color-bg2 my-3 items-center flex flex-row h-32 md:h-40 w-11/12 md:w-4/6 border border-color-div">
         <div className="h-full w-2/6 border-color-bg2 bg-green-300 relative overflow-hidden">
           <Image
-            src="/vert.jpg"
+            src={img}
             alt="Minha imagem"
             fill
             style={{ objectFit: 'cover' }} // object-fit: "contain"

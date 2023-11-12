@@ -41,7 +41,7 @@ export default function Projeto({ projeto }: ProjetoProps) {
         <div className="bg-color-bg2 items-center flex flex-col w-full max-w-5xl">
           <div className="h-96 w-full border-color-bg2 bg-green-300 relative overflow-hidden">
             <Image
-              src="/vert.jpg"
+              src={projeto.thumbnail}
               alt="Minha imagem"
               fill
               style={{ objectFit: 'cover' }} // object-fit: "contain"
