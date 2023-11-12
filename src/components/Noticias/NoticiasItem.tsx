@@ -11,7 +11,7 @@ interface ProjetoProps {
 export function NoticiasItem({ title, type, slug, img }: ProjetoProps) {
   return (
     <Link href={`/${slug}`} className="bg-color-bg2 my-3 items-center flex flex-row h-32 md:h-40 w-11/12 md:w-4/6 border border-color-div">
-        <div className="h-full w-2/6 border-color-bg2 bg-green-300 relative overflow-hidden">
+        <div className="h-full w-2/6 border-color-bg2 bg-white relative overflow-hidden">
           <Image
             src={img}
             alt="Minha imagem"
