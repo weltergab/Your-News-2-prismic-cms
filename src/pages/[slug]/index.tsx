@@ -48,7 +48,7 @@ export default function Projeto({ projeto }: ProjetoProps) {
             />
           </div>
           <div className="h-auto py-6 mx-3 px-6 flex flex-col relative">
-            <h1 className="font-medium pb-20 text-xl">{projeto.title}</h1>
+            <h1 className="font-semibold pb-20 text-2xl">{projeto.title}</h1>
             <p>{projeto.type}</p>
           </div>
         </div>

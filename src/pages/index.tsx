@@ -14,13 +14,16 @@ import { Noticias } from '@/components/Noticias'
 import { Footer } from '@/components/Footer'
 import Head from 'next/head'
 
+import { PrismicRichText } from '@prismicio/react'
+
+
 const inter = Inter({ subsets: ['latin'] })
 
 interface IProjeto {
   slug: string;
   title: string;
   type: string;
-  description: string;
+  description: any;
   link: string;
   thumbnail: string;
 }
@@ -36,6 +39,8 @@ export default function Home({ projetos }: HomeProps) {
         <Header />
         <Noticias projetos={projetos} />
         {/* <h1>{projetos[0].description}</h1> */}
+
+        {/* <PrismicRichText field={projetos[0].description}/> */}
       </div>
     </>
   )

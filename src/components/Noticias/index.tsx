@@ -5,7 +5,7 @@ interface IProjeto {
   slug: string;
   title: string;
   type: string;
-  description: string;
+  description: any;
   link: string;
   thumbnail: string;
 }
@@ -22,6 +22,7 @@ export function Noticias({ projetos }: ProjetosProps) {
           key={projeto.slug}
           img={projeto.thumbnail}
           title={projeto.title}
+          description={projeto.description}
           type={projeto.type}
           slug={projeto.slug}
         />
