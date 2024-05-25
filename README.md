@@ -2,7 +2,7 @@
 
 Projeto criado em React, Next, Tailwind, PrismicCMS e a hospedagem foi feita na Vercel.
 
-Este site foi desenvolvido do zero com diversos testes, incluindo todas as decisões de design.
+Este site foi desenvolvido do zero com diversos testes, incluindo todo o design.
 Um dos meus focos foi a responsividade, para que ele funcione bem em celulares. Sem ter anúnicos e itens desorganizados na tela e com uma velocidade absurda com o Next.
 
 
